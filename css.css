@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    vertical-align: center;
+    align-items: center;
+}
+
+form{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+label{
+    display: block;
+    text-align: right;
+}
+
+input[type=text]{
+    width: 70%;
+}
+
+input[type=date]{
+    width: 100%;
+}
+
+input[type=submit]{
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 600px) {
+    form{
+      width: 100%;
+    }
+    fieldset{
+        grid-template-columns: 1fr;
+    }
+    label{
+        text-align: left;
+    }
+  }
