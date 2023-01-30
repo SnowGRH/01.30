@@ -1,13 +1,16 @@
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 body{
+    background-color: gray;
     margin: 0;
     padding: 0;
 }
 
 main{
+    background-color:  black;
     height: 100vh;
     display: grid;
     vertical-align: center;
